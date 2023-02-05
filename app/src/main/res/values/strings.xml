@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Pet Care</string>
+
+    <string name="Title">PET CARE</string>
+    <string name="buttonLogin">PRIJAVA</string>
+    <string name="buttonRegister">REGISTRACIJA</string>
+    <string name="imeTxt">ime:</string>
+    <string name="prezimeTxt">prezime:</string>
+    <string name="usernameTxt">korisničko ime:</string>
+    <string name="pswrdTxt">lozinka:</string>
+    <string name="returnButton">NATRAG</string>
+    <string name="lijekovi">LIJEKOVI</string>
+    <string name="šišanje">ŠIŠANJE</string>
+    <string name="spremi">SPREMI</string>
+    <string name="kupanje">KUPANJE</string>
+    <string name="češljanje">ČEŠLJANJE</string>
+    <string name="dohvati">DOHVATI</string>
+    <string name="unesi">UNESI</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

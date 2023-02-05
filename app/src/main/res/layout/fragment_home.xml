@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/HomeFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blue">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="110dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="641dp"
+            android:src="@drawable/paw"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="28dp"
+            android:fontFamily="@font/ribeye"
+            android:text="@string/Title"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/white"
+            android:textSize="50sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/lijekovi"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="70dp"
+            android:background="@color/white"
+            android:fontFamily="@font/amaranth"
+            android:text="@string/lijekovi"
+            android:textAlignment="center"
+            android:textColor="@color/blue_dark"
+            android:textColorHighlight="@color/blue_dark"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Title" />
+
+        <TextView
+            android:id="@+id/šišanje"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="70dp"
+            android:background="@color/white"
+            android:fontFamily="@font/amaranth"
+            android:text="@string/šišanje"
+            android:textAlignment="center"
+            android:textColor="@color/blue_dark"
+            android:textColorHighlight="@color/blue_dark"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Title" />
+
+        <EditText
+            android:id="@+id/editLijekovi"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="@color/white"
+            android:ems="10"
+            android:hint="@string/unesi"
+            android:inputType="date"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lijekovi"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <EditText
+            android:id="@+id/editŠišanje"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="40dp"
+            android:backgroundTint="@color/white"
+            android:ems="10"
+            android:hint="@string/unesi"
+            android:inputType="date"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/šišanje"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/kupanje"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="80dp"
+            android:background="@color/white"
+            android:fontFamily="@font/amaranth"
+            android:text="@string/kupanje"
+            android:textAlignment="center"
+            android:textColor="@color/blue_dark"
+            android:textColorHighlight="@color/blue_dark"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editLijekovi" />
+
+        <EditText
+            android:id="@+id/editKupanje"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="@color/white"
+            android:ems="10"
+            android:hint="@string/unesi"
+            android:inputType="date"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/kupanje"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/češljanje"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="60dp"
+            android:background="@color/white"
+            android:fontFamily="@font/amaranth"
+            android:text="@string/češljanje"
+            android:textAlignment="center"
+            android:textColor="@color/blue_dark"
+            android:textColorHighlight="@color/blue_dark"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editŠišanje" />
+
+        <EditText
+            android:id="@+id/editČešljanje"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="40dp"
+            android:backgroundTint="@color/white"
+            android:ems="10"
+            android:hint="@string/unesi"
+            android:inputType="date"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/češljanje"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/logoutButton"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="158dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="159dp"
+            android:backgroundTint="@color/blue"
+            android:src="@drawable/ic_baseline_logout_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonSpremi"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/buttonSpremi"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="35dp"
+            android:backgroundTint="@color/blue_dark"
+            android:fontFamily="@font/amaranth"
+            android:text="@string/spremi"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/white"
+            android:textSize="20sp"
+            app:cornerRadius="20dp"
+            app:layout_constraintEnd_toStartOf="@+id/dohvatiButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editČešljanje"
+            app:strokeColor="@color/white"
+            app:strokeWidth="3dp" />
+
+        <Button
+            android:id="@+id/dohvatiButton"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="20dp"
+            android:backgroundTint="@color/blue_dark"
+            android:fontFamily="@font/amaranth"
+            android:text="@string/dohvati"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/white"
+            android:textSize="20sp"
+            app:cornerRadius="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/buttonSpremi"
+            app:layout_constraintTop_toBottomOf="@+id/editČešljanje"
+            app:strokeColor="@color/white"
+            app:strokeWidth="3dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
